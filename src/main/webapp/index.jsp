@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Landing Page - Start Bootstrap Theme</title>
+  <title>Demo Application - Landing Page</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://blackrockdigital.github.io/startbootstrap-landing-page/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap - canary</a>
+      <a class="navbar-brand" href="#">Demo Application with Rolling Update Deployment</a>
       <a class="btn btn-primary" href="#">Sign In</a>
     </div>
   </nav>
