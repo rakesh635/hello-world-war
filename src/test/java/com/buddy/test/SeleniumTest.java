@@ -28,7 +28,7 @@ public class SeleniumTest {
     @Test
     public void test1() throws Exception {
     	driver.get("http://34.93.73.51:8080/helloworld/");
-        assertEquals("Hello Buddy!", driver.getTitle());
+        assertEquals("Demo Application - Landing Page", driver.getTitle());
     }
 
 	//Error
@@ -36,7 +36,7 @@ public class SeleniumTest {
     @Test
     public void test2() throws Exception {
     	driver.get("http://34.93.73.51:8080/helloworld/");
-        assertEquals("Hello Rafal!", driver.getTitle());
+        assertEquals("Demo Application - Landing Page", driver.getTitle());
     }
 
     @After
