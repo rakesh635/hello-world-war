@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Demo Application - Landing Page</title>
+  <title>Demo Application - Landing Page </title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://blackrockdigital.github.io/startbootstrap-landing-page/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
