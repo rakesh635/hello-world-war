@@ -26,7 +26,7 @@ public class SeleniumTest {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);*/
 	    
-	driver = new RemoteWebDriver(new URL("http://34.93.123.206:9515"), DesiredCapabilities.chrome());
+	driver = new RemoteWebDriver(new URL("http://34.93.123.206:9515"));
 	driver.get("http://www.google.com");
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
