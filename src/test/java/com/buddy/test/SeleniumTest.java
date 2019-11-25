@@ -19,11 +19,22 @@ public class SeleniumTest {
 
     @Before
     public void setUp() throws MalformedURLException {
-        //DesiredCapabilities capability = DesiredCapabilities.chrome();
+	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        DesiredCapabilities capability = DesiredCapabilities.chrome();
         //driver = new RemoteWebDriver(new URL("http://34.93.120.219:4444/wd/hub"), capability);
 	driver = new RemoteWebDriver(new URL("http://34.93.123.206:4444/wd/hub"), capability);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+	    
+	/*    
+	public static void main(String[] args) throws Exception {
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://34.93.123.206:4444/wd/hub"), capabilities);
+        Capabilities cap = driver.getCapabilities();
+        String browserName = cap.getBrowserName().toLowerCase();
+        System.out.println(browserName);
+        driver.quit();    */
     }
 
     @Test
