@@ -28,10 +28,10 @@ desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
 	    
 	    
-	ChromeOptions chromeOptions = new ChromeOptions();
-	chromeOptions.setBinary(getChromeExecutableLocation().getAbsolutePath());
-	chromeOptions.addArguments("no-sandbox");
-	DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setBinary(getChromeExecutableLocation().getAbsolutePath());
+        chromeOptions.addArguments("no-sandbox");
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	  
 	    
 	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");    
