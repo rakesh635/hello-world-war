@@ -20,21 +20,7 @@ public class SeleniumTest {
     @Before
     public void setUp() throws MalformedURLException {
 	
-	    
-	
-	/*DesiredCapabilities desiredCap = DesiredCapabilities.Chrome();
-	desiredCap.SetCapability("headless", true);
-	desiredCap.SetCapability("platform", "LINUX");
-	desiredCap.SetCapability("version", "latest");
-
-	driver = new RemoteWebDriver(
-	  new Uri("https://hub.testingbot.com/wd/hub/"), desiredCap
-	);  */ 
-	    
-	    
-	    
-	    
-        DesiredCapabilities capability = DesiredCapabilities.chrome();
+	DesiredCapabilities capability = DesiredCapabilities.chrome();
 	capability.SetCapability("headless", true);
 	capability.SetCapability("platform", "LINUX");
 	capability.SetCapability("version", "ANY");
