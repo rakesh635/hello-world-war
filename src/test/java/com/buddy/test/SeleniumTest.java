@@ -5,6 +5,7 @@ import org.junit.After;
 import org.junit.Test;
 import org.junit.Ignore;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -27,7 +28,7 @@ chromeOptions.addArguments("--headless");
 desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
 	  
-	    
+	/*    
 	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");    
 	DesiredCapabilities capability = DesiredCapabilities.chrome();
         //capability.setCapability("headless", true);
@@ -37,6 +38,15 @@ WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
         //driver = new RemoteWebDriver(new URL("http://34.93.120.219:4444/wd/hub"), capability);
 	driver = new RemoteWebDriver(new URL("http://34.93.123.206:4444/wd/hub"), capability);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);*/
+	    
+	    
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setCapability("platform", "LINUX");
+	chromeOptions.setCapability("headless", true);
+        chromeOptions.setCapability("version", "ANY");
+        driver = new RemoteWebDriver(new URL("http://34.93.120.219:4444/wd/hub"), chromeOptions);
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
     }
 
