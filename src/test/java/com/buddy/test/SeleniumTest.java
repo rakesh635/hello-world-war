@@ -26,18 +26,11 @@ chromeOptions.setBinary("/usr/bin/chromium-browser");
 chromeOptions.addArguments("--headless");
 desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
-	    
-	    
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setBinary(getChromeExecutableLocation().getAbsolutePath());
-        chromeOptions.addArguments("no-sandbox");
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	  
 	    
 	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");    
 	DesiredCapabilities capability = DesiredCapabilities.chrome();
-        capability.setCapability("headless", true);
-	capability.setCapability("headless", true);
+        //capability.setCapability("headless", true);
         capability.setCapability("platform", "LINUX");
         capability.setCapability("version", "ANY");
 	capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);  
