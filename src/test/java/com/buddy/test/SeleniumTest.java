@@ -19,8 +19,25 @@ public class SeleniumTest {
 
     @Before
     public void setUp() throws MalformedURLException {
-	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	
+	    
+	
+	/*DesiredCapabilities desiredCap = DesiredCapabilities.Chrome();
+	desiredCap.SetCapability("headless", true);
+	desiredCap.SetCapability("platform", "LINUX");
+	desiredCap.SetCapability("version", "latest");
+
+	driver = new RemoteWebDriver(
+	  new Uri("https://hub.testingbot.com/wd/hub/"), desiredCap
+	);  */ 
+	    
+	    
+	    
+	    
         DesiredCapabilities capability = DesiredCapabilities.chrome();
+	capability.SetCapability("headless", true);
+	capability.SetCapability("platform", "LINUX");
+	capability.SetCapability("version", "ANY");
         //driver = new RemoteWebDriver(new URL("http://34.93.120.219:4444/wd/hub"), capability);
 	driver = new RemoteWebDriver(new URL("http://34.93.123.206:4444/wd/hub"), capability);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
