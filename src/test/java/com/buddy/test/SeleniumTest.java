@@ -28,7 +28,7 @@ desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
 	  
 	    
-	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");    
+	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");    
 	DesiredCapabilities capability = DesiredCapabilities.chrome();
         //capability.setCapability("headless", true);
         capability.setCapability("platform", "LINUX");
