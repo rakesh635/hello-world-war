@@ -20,10 +20,18 @@ public class SeleniumTest {
     @Before
     public void setUp() throws MalformedURLException {
 	
+	    
+	/*final ChromeOptions chromeOptions = new ChromeOptions();
+chromeOptions.setBinary("/usr/bin/chromium-browser");
+chromeOptions.addArguments("--headless");
+desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
+	    
+	    
 	DesiredCapabilities capability = DesiredCapabilities.chrome();
-	capability.SetCapability("headless", true);
-	capability.SetCapability("platform", "LINUX");
-	capability.SetCapability("version", "ANY");
+        capability.setCapability("headless", true);
+        capability.setCapability("platform", "LINUX");
+        capability.setCapability("version", "ANY");
         //driver = new RemoteWebDriver(new URL("http://34.93.120.219:4444/wd/hub"), capability);
 	driver = new RemoteWebDriver(new URL("http://34.93.123.206:4444/wd/hub"), capability);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
