@@ -53,7 +53,7 @@ WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
     @Test
     public void test1() throws Exception {
     	//driver.get("http://34.93.73.51:8080/helloworld/");
-	driver.get("http://35.200.166.99:8081/hello2/");
+	driver.get("http://35.200.184.59:8081/hello2/");
         assertEquals("Demo Application - Landing Page", driver.getTitle());
     }
 
@@ -62,7 +62,7 @@ WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);    */
     @Test
     public void test2() throws Exception {
     	//driver.get("http://34.93.73.51:8080/helloworld/");
-	driver.get("http://35.200.166.99:8081/hello2/");
+	driver.get("http://35.200.184.59:8081/hello2/");
         assertEquals("Demo Application - Landing Page", driver.getTitle());
     }
 
